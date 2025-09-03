@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, provideRouter } from '@angular/router';
+import { TopBarComponent } from './components/topbar/topbar.component';
+import { NavBarComponent } from './components/navbar/navbar.component';
+import { appRoutes } from './app.routes';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterModule, TopBarComponent, NavBarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'supermercado-spa';
-}
+export class AppComponent {}

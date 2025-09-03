@@ -1,0 +1,38 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #c62828;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn,
+.login-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1rem 0.5rem 0 0.5rem; 
+  cursor: pointer;
+}
+
+
+.search-bar {
+  margin-top: 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}

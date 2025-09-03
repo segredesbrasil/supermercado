@@ -1,0 +1,15 @@
+<!-- Botão do menu (fica na topbar) -->
+<button class="menu-btn" (click)="toggleMenu()">☰</button>
+
+<!-- Overlay escuro -->
+<div class="overlay" *ngIf="aberto" (click)="fecharMenu()"></div>
+
+<!-- Sidebar -->
+<div class="sidebar" [class.aberto]="aberto">
+  <nav>
+    <a routerLink="/" (click)="fecharMenu()">🏠 Home</a>
+    <a routerLink="/lista" (click)="fecharMenu()">📦 Lista</a>
+    <a routerLink="/carrinho" (click)="fecharMenu()">🛒 Carrinho</a>
+    <a routerLink="/contato" (click)="fecharMenu()">☎️ Contato</a>
+  </nav>
+</div>

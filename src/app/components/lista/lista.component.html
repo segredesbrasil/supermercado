@@ -1,0 +1,12 @@
+<div class="lista-container">
+  <h2>Produtos</h2>
+  <div class="produtos-grid">
+    <div class="produto-card" *ngFor="let produto of produtosFiltrados()">
+      <img *ngIf="produto.src" [src]="produto.src" [alt]="produto.nome" />
+      <h3>{{ produto.nome }}</h3>
+      <p>{{ produto.descricao }}</p>
+      <p class="preco">R$ {{ produto.preco.toFixed(2) }}</p>
+      <button (click)="adicionarAoCarrinho(produto)">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</div>

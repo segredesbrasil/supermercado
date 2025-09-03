@@ -1,0 +1,28 @@
+<div class="carrinho-container">
+    <h2>🛒 Meu Carrinho</h2>
+  
+    <div *ngIf="itens.length > 0; else vazio">
+      <div class="item" *ngFor="let item of itens">
+        <div class="detalhes">
+          <h3>{{ item.nome }}</h3>
+          <p>Preço: R$ {{ item.preco | number:'1.2-2' }}</p>
+          <div class="quantidade">
+            <button (click)="diminuirQuantidade(item)">➖</button>
+            <span>{{ item.quantidade }}</span>
+            <button (click)="aumentarQuantidade(item)">➕</button>
+          </div>
+        </div>
+        <button class="remover" (click)="removerItem(item.id)">❌</button>
+      </div>
+  
+      <div class="total">
+        <h3>Total: R$ {{ total | number:'1.2-2' }}</h3>
+        <button class="finalizar" (click)="finalizarCompra()">Finalizar Compra</button>
+      </div>
+    </div>
+  
+    <ng-template #vazio>
+      <p class="vazio">Seu carrinho está vazio 🛒</p>
+    </ng-template>
+  </div>
+  

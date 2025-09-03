@@ -1,0 +1,25 @@
+.bottom-nav {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; /* força os itens para baixo */
+  background-color: #c62828;
+  color: white;
+  padding: 0.5rem 0 1.5rem 0; /* pouco em cima, mais embaixo */
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 2rem; /* aumenta altura de cada link */
+}
+
+.bottom-nav a.active {
+  font-weight: bold;
+  border-top: 2px solid #fff;
+}

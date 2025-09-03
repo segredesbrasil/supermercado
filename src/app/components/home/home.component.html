@@ -1,0 +1,14 @@
+<div class="home-container">
+  <h2>Produtos em Destaque</h2>
+  <div class="destaques">
+    <div class="produto-card" *ngFor="let produto of destaques">
+      <!-- Exibe a imagem se existir -->
+      <img *ngIf="produto.src" [src]="produto.src" [alt]="produto.nome">
+
+      <h3>{{ produto.nome }}</h3>
+      <p>{{ produto.descricao }}</p>
+      <p class="preco">R$ {{ produto.preco.toFixed(2) }}</p>
+      <button (click)="adicionarAoCarrinho(produto)">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</div>
