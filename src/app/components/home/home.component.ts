@@ -19,11 +19,11 @@ interface Produto {
 })
 export class HomeComponent implements OnInit {
   todosProdutos: Produto[] = [
-    { id: 1, nome: 'Arroz', descricao: 'Pacote 5kg', preco: 25, src: '/assets/arroz.jpeg' },
-    { id: 2, nome: 'Feijão', descricao: 'Pacote 1kg', preco: 8.5, src: '/assets/feijao.jpeg' },
-    { id: 3, nome: 'Macarrão', descricao: 'Pacote 500g', preco: 5.9, src: '/assets/macarrao.jpeg' },
-    { id: 4, nome: 'Óleo', descricao: '900ml', preco: 7.2, src: '/assets/oleo.jpeg' },
-    { id: 5, nome: 'Açúcar', descricao: 'Pacote 1kg', preco: 6.0, src: '/assets/acucar.jpeg' },
+    { id: 1, nome: 'Arroz', descricao: 'Pacote 5kg', preco: 25, src: 'assets/arroz.jpeg' },
+    { id: 2, nome: 'Feijão', descricao: 'Pacote 1kg', preco: 8.5, src: 'assets/feijao.jpeg' },
+    { id: 3, nome: 'Macarrão', descricao: 'Pacote 500g', preco: 5.9, src: 'assets/macarrao.jpeg' },
+    { id: 4, nome: 'Óleo', descricao: '900ml', preco: 7.2, src: 'assets/oleo.jpeg' },
+    { id: 5, nome: 'Açúcar', descricao: 'Pacote 1kg', preco: 6.0, src: 'assets/acucar.jpeg' },
   ];
 
   destaques: Produto[] = [];

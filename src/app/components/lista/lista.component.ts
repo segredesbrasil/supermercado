@@ -20,10 +20,10 @@ interface Produto {
 })
 export class ListaComponent {
   produtos: Produto[] = [
-    { id: 1, nome: 'Maçã', descricao: 'Maçã fresca', preco: 3.5, src: '/assets/maca.jpeg' },
-    { id: 2, nome: 'Banana', descricao: 'Banana madura', preco: 2.0, src: '/assets/banana.jpeg' },
-    { id: 3, nome: 'Leite', descricao: 'Leite integral', preco: 4.5, src: '/assets/leite.jpeg' },
-    { id: 4, nome: 'Macarrão', descricao: 'Macarrão pacote', preco: 0.5, src: '/assets/macarrao.jpeg' }
+    { id: 1, nome: 'Maçã', descricao: 'Maçã fresca', preco: 3.5, src: 'assets/maca.jpeg' },
+    { id: 2, nome: 'Banana', descricao: 'Banana madura', preco: 2.0, src: 'assets/banana.jpeg' },
+    { id: 3, nome: 'Leite', descricao: 'Leite integral', preco: 4.5, src: 'assets/leite.jpeg' },
+    { id: 4, nome: 'Macarrão', descricao: 'Macarrão pacote', preco: 0.5, src: 'assets/macarrao.jpeg' }
   ];
 
   produtosFiltrados = computed(() =>
